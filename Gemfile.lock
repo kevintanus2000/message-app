@@ -62,6 +62,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -83,6 +84,7 @@ GEM
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    hirb (0.7.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -177,6 +179,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic-ui-sass (2.4.4.0)
+      sassc
     semantic_range (3.0.0)
     spring (4.1.1)
     sprockets (4.2.1)
@@ -221,9 +225,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  hirb
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
@@ -231,6 +237,7 @@ DEPENDENCIES
   rails (~> 6.1.7, >= 6.1.7.6)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
+  semantic-ui-sass
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
